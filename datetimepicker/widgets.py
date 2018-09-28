@@ -95,7 +95,7 @@ class DateTimePicker(DateTimeInput):
 
         super(DateTimePicker, self).__init__(attrs, format_string)
 
-    def render(self, name, value, attrs=None, prefix='datetimepicker'):
+    def render(self, name, value, attrs=None, prefix='datetimepicker', renderer=None):
 
         if value is None:
             value = ''
